@@ -1,0 +1,9 @@
+INSERT INTO person (name, last_name) VALUES ('Lucas','Chalela');
+INSERT INTO person (name, last_name) VALUES ('Maria','Garcia');
+INSERT INTO person (name, last_name) VALUES ('Pedro','Junte');
+INSERT INTO person (name, last_name) VALUES ('Pepito','Casuela');
+INSERT INTO person (name, last_name) VALUES ('Juanito','Torres');
+INSERT INTO person (name, last_name) VALUES ('Diana','Montes');
+INSERT INTO person (name, last_name) VALUES ('Percy','Manuleas');
+INSERT INTO person (name, last_name) VALUES ('Marco','Pajares');
+INSERT INTO person (name, last_name) VALUES ('Pamela','Granda');
