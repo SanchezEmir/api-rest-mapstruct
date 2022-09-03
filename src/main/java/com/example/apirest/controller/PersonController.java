@@ -1,5 +1,6 @@
 package com.example.apirest.controller;
 
+import com.example.apirest.dto.PersonDto;
 import com.example.apirest.model.Person;
 import com.example.apirest.service.IPersonService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,17 +36,17 @@ public class PersonController {
     }
 
     @PostMapping("/new")
-    public ResponseEntity<?> savePerson(@Valid @RequestBody Person person){
+    public ResponseEntity<?> savePerson(@Valid @RequestBody PersonDto personDto){
         response.clear();
-        personService.savePerson(person);
+        personService.savePerson(personDto);
         response.put("message", "Save successfully");
         return new ResponseEntity<>(response, HttpStatus.CREATED);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<?> updatePerson(@PathVariable Long id,@RequestBody Person person){
+    public ResponseEntity<?> updatePerson(@PathVariable Long id,@RequestBody PersonDto personDto){
         response.clear();
-        personService.updatePerson(id,person);
+        personService.updatePerson(id,personDto);
         response.put("message", "update successfully");
         return new ResponseEntity<>(response, HttpStatus.ACCEPTED);
     }
